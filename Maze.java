@@ -1,8 +1,7 @@
 package Maze1;
 
-/**************** Java ¹Ì·ÎÃ£±â ÇÁ·Î±×·¥ÀÔ´Ï´Ù.**************************
-ÀÛ¼ºÀÚ : ¼ÒÇÁÆ®¿ş¾î°øÇĞ°ú 201413334 ÇÑ¼ö¹Î
-ÃÖÁ¾ ¼öÁ¤ÀÏ : 2015.12.01
+/**************** Java ë¯¸ë¡œì°¾ê¸° í”„ë¡œê·¸ë¨ì…ë‹ˆë‹¤.**************************
+ìµœì¢… ìˆ˜ì •ì¼ : 2015.12.01
 **************************************************************/
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,7 +12,7 @@ public class Maze {
 	
 	static int ROW = 20;
 	
-	static int COL = 42; //40ÀÌ¿©¾ßÇÏ´Âµ¥ ¹«½¼ÀÌÀ¯ÀÎÁö ¸ğ¸£³ª 2°³ÀÇ ¿­À» ´õ ³Ö¾î¾ß ºóÄ­ÀÌ ¾ø¾îÁö°í Á¦´ë·Î ½ÇÇàÀÌµÈ´Ù
+	static int COL = 42; //40ì´ì—¬ì•¼í•˜ëŠ”ë° ë¬´ìŠ¨ì´ìœ ì¸ì§€ ëª¨ë¥´ë‚˜ 2ê°œì˜ ì—´ì„ ë” ë„£ì–´ì•¼ ë¹ˆì¹¸ì´ ì—†ì–´ì§€ê³  ì œëŒ€ë¡œ ì‹¤í–‰ì´ëœë‹¤
 	
 	static char[][] maze = new char[ROW][COL];
 
@@ -41,7 +40,7 @@ public class Maze {
 		Element here = new Element(0, 0);
 		ArrayStack s = new ArrayStack();
 		
-		//¹æÇâ
+		//ë°©í–¥
 		while (maze[here.x][here.y] != 'x') {
 
 			x = here.x;     
@@ -69,13 +68,13 @@ public class Maze {
 				}
 				System.out.println();
 			}	
-			try {              //´«¿¡º¸±â±âÀ§ÇØ µô·¹ÀÌÇÔ¼ö »ç¿ë 
+			try {              //ëˆˆì—ë³´ê¸°ê¸°ìœ„í•´ ë”œë ˆì´í•¨ìˆ˜ ì‚¬ìš© 
 				Thread.sleep(100);								
 			} catch (InterruptedException e) {
 				
 			}
 		}
 		
-		System.out.println("=====³¡=====");
+		System.out.println("=====ë=====");
 	}
 }
